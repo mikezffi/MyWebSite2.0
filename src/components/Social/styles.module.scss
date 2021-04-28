@@ -1,0 +1,80 @@
+.icons {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+
+  ul {
+    padding: initial;
+    display: flex;
+
+    li {
+      height: 2.5rem;
+      width: 2.5rem;
+
+      background: rgba($color: #bed2ff, $alpha: 0.6);
+      box-shadow: 0 0px 3px 1px rgb(210, 243, 252);
+      color: #fff;
+
+      list-style-type: none;
+
+      margin: 0px 3px 0px 3px;
+      padding: 0.5rem 0rem 1rem 0.7rem;
+    }
+
+    .email:hover {
+      background-color: #3b5998;
+      box-shadow: 0 0px 3px 1px #3b5998;
+    }
+
+    .github:hover {
+      background-color: #ff4800;
+      box-shadow: 0 0px 3px 1px #ff4800;
+    }
+
+    .linkedin:hover {
+      background-color: #007bb5;
+      box-shadow: 0 0px 3px 1px #007bb5;
+    }
+
+    .twitter:hover {
+      background-color: #55acee;
+      box-shadow: 0 0px 3px 1px #55acee;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .icons {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) translateX(0%);
+    z-index: 100;
+    width: 2.5rem;
+  
+    ul {
+      padding: initial;
+      display: block;
+  
+      li {
+        height: 2.5rem;
+        width: 2.5rem;
+  
+        color: #fff;
+  
+        list-style-type: none;
+
+        margin: 10px 0px 0px 0px;
+        padding: 30% 0 0 30%;
+      }
+
+      li:hover {
+        padding-left: 40%;
+        width: 3rem;
+        height: 2.7rem;
+        transition: 0.3s;
+      }
+    }
+  }
+}
