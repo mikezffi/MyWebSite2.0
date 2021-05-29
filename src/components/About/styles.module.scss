@@ -1,18 +1,25 @@
 .wrapper {
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(0deg, rgba(29,32,38,0.9) 0%, rgba(0,212,255,0) 100%);
 
   .tilt {
-    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
     perspective: 300px;
+    margin: 10%;
+
     .content {
       text-align: justify;
       font-weight: 300;
       line-height: 1.1rem;
-      transform: rotateX(10deg);
+      transform: rotateX(10deg); 
+      max-width: 500px;
 
       h1, h2, h3 {
         text-align: center;
@@ -29,44 +36,6 @@
 
       a {
         color: var(--gray-200);
-      }
-    }
-  }
-}
-
-@media (min-width: 600px) {
-  .tilt {
-    h2{
-      margin: 2rem;
-    }
-
-    p {
-      line-height: 1.3rem;
-    }
-
-    ul {
-      line-height: 1.3rem;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    .tilt {
-      width: 40vw;
-      .content {
-
-        h2{
-          margin: 2rem;
-        }
-
-        p {
-          line-height: 1.5rem;
-        }
-
-        ul {
-          line-height: 1.5rem;
-        }
       }
     }
   }

@@ -9,7 +9,6 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
         
           <link rel="shortcut icon" href="/favicon.ico" />
-          <title>Mike Zuffi - Front-end Developer</title>
         </Head>
         <body>
           <Main />

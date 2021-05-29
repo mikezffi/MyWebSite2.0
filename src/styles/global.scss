@@ -1,114 +1,40 @@
 :root {
-  --white: #FFF;
+   --bg: #F4F5F7;
+   --white: #FFF;
 
-  --gray-50: #ecf2fd;
-  --gray-100: #e2e7f0;
-  --gray-200: #c0dae2;
-  --gray-500: #808080;
-  --gray-800: #494D4B;
+   --gray-50: #ecf2fd;
+   --gray-100: #e2e7f0;
+   --gray-200: #c0dae2;
+   --gray-500: #808080;
+   --gray-800: #494D4B;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100vh;
-  overflow: hidden;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 body {
-  height: 100vh;
+   background: radial-gradient(ellipse at bottom, #080b0f 0%,#15192e 100%);
 }
 
 body, input, textarea, button {
-  font-family: 'Roboto Mono', monospace, sans-serif;
-  color: var(--gray-100);
+   font-family: 'Roboto Mono', monospace, sans-serif;
+   color: var(--gray-100);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  font-family: 'Roboto Mono', monospace, sans-serif;
-  color: var(--gray-200)
+   font-weight: 500;
+   font-family: 'Roboto Mono', monospace, sans-serif;
+   color: var(--gray-200)
+}
+
+a {
+   text-decoration: none;
+   color: #84e6ff
 }
 
 button {
-  cursor: pointer;
-}
-//=========================//
-
-.wrapper {
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  scroll-snap-type: y mandatory;
-
-  .section{
-    scroll-snap-align: center;
-  }
-
-  section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
-  }
-
-  #linkProfile {
-    position: relative;
-      bottom: 5%;
-    opacity: 0.1;
-    animation: blink 2s linear infinite;
-    cursor: pointer;
-  }
-
-  #linkAbout {
-    position: relative;
-      top: 5%;
-    opacity: 0.1;
-    animation: blink 2s linear infinite;
-    cursor: pointer;
-  }
-}
-
-footer {
-  position: relative;
-
-  .footer {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    margin-bottom: 5px;
-    transform: translateX(-50%);
-
-    p {
-      font-family: sans-serif;
-      font-weight: 300;
-      font-size: 0.8rem;
-      color: rgba($color: #6e6e6e, $alpha: 0.8);
-    }
-  }
-}
-
-@keyframes blink {
-  0% { opacity: 0.1; }
-  50% { opacity: 1;}
-  100%   { opacity: 0.1; }
-}
-
-@media (max-width: 500px) {
-  
-  .wrapper {
-    #linkAbout {
-      position: relative;
-      top: 8%;
-    }
-  }
+   cursor: pointer;
 }
