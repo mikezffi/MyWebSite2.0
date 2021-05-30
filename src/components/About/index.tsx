@@ -9,7 +9,7 @@ export function About() {
               <h2>Hi, I'm mike</h2>
 
               
-              <p>I'm a front-end and mobile developer based in São Paulo, Brazil.</p>
+              <p>I'm a front-end and mobile developer based in São Paulo, Brasil.</p>
 
               <p>Powered up with some great tools such as Next.js, React Native, Typescript, Node.JS... I help people bring their ideas to life.</p>
 

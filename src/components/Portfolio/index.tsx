@@ -12,13 +12,12 @@ export function Portfolio() {
             <h3>My Timer Pal</h3>
 
             <p>
-              MyTimerPal is a mobile app that let people organize
-              their workout and time each exercises.
+              MyTimerPal is a mobile app that lets people organize their workout and time each exercise.
             </p>
             <span>soon on:</span>
             <img src="/appstores.png" alt="app store" style={{width: '100px', marginTop: '5px', marginBottom: '20px'}} />
 
-            <p>I made this app using React Native with Expo CLI. It is multiplataform, has animated Lists and json animations.</p>
+            <p>I made this app using React Native with Expo CLI. It is multiplatform, has animated Lists and Lottie animations.</p>
             <p>You can check out the code and a free demo on my <a href="https://github.com/mikezffi/MyTimerPal/releases/tag/v1.0">Github</a>.</p>
 
           </div>
